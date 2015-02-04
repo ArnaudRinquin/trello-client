@@ -1,0 +1,24 @@
+{
+  "name": "trello-client",
+  "version": "1.0.0",
+  "description": "An empty trello client app",
+  "main": "index.js",
+  "scripts": {
+    "start": "browserify src/index.js -o dist/script.js && shuss -d ./dist",
+    "dev": "shuss -d ./dist -l & watchify src/index.js -o dist/script.js"
+  },
+  "keywords": [
+    "trello"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArnaudRinquin/trello-client"
+  },
+  "author": "Arnaud Rinquin",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^8.1.3",
+    "shuss": "^1.1.0",
+    "watchify": "^2.3.0"
+  }
+}
