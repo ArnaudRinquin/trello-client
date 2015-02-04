@@ -1,11 +1,22 @@
 <html>
   <head>
     <title>Trello Client</title>
+    <link href="/style.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello Trello!</h1>
+    
+    <button id="connect" class="hidden">Connect to Trello...</button>
+    
+    <section id="profile" class="hidden">
+      Oh <span id="name"></span>! You are now connected to Trello!
+      <div>
+        You have <span id="boardsCount"></span> boards.
+      </div>
+    </section>
+    
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="https://api.trello.com/1/client.js?key=ff4e676dbc3c3066a7c84d7811570565"></script>
-    <script src="./script.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
